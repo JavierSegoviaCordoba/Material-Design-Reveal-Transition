@@ -5,7 +5,6 @@ import android.animation.AnimatorListenerAdapter;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -52,12 +51,6 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        buttonImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i("Clicked", "Clicked");
-            }
-        });
         buttonImage.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
